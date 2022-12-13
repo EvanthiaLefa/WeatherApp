@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../icon/photo-1503625958874-841b0d503dd0.jpeg");
+    background-size: cover;
+    max-width: 60vw;
+}
+h2{
+    margin-left: 15%;
+}
+label{
+    color: aliceblue;
+    font-size: larger;
+    margin-left: 15%;
+}
+.card{
+    margin-top: 10%;
+    border: none;
+    margin-left: 63%;
+}
+input{
+    height: 2.5em;
+    border-radius: 15px;
+}
+button{
+    margin-left: 24%;
+}
+.search{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+ul {
+    font-size: larger;
+    
+}
+#temp, #feels, #humid, #wind{
+    color: aliceblue;
+    margin-left: 10%;
+    font-size: larger;
+}
+#loc{
+    color:rgb(197, 206, 214);
+   margin-left: 17%;
+}
