@@ -1,4 +1,5 @@
 
+
 const temp =document.querySelector('#temp')
 const feels =document.querySelector('#feels')
 const humid =document.querySelector('#humid')
@@ -21,15 +22,14 @@ function getData(){
    windsData = data.currentConditions.windspeed;
    conditions = data.currentConditions.conditions;
    address = data.address;
-
-   temp.innerText = `Temprature: ${tempData}`
-   feels.innerText = `Feelslike: ${feelsData}`
-   humid.innerText = `Humidity: ${humidityData}`
-   wind.innerText = `Windspeed: ${windsData}`
+   temp.innerText = `${tempData}°C`
+   feels.innerText = `Feelslike:  ${feelsData}`
+   humid.innerText = `Humidity:     ${humidityData}`
+   wind.innerText = `Windspeed:     ${windsData}`
    loc.innerText = address.toUpperCase()
-
+ 
    if(conditions == 'Overcast'){
-   img.src= './icon/cloud.jpeg'
+   img.src= './icon/cloudy.jpeg'
    img.style.display = 'block';
   } else if(conditions =='Clear'){
     img.src= './icon/clear.jpeg'
@@ -41,7 +41,6 @@ function getData(){
     img.src= './icon/snow.jpeg'
     img.style.display = 'block';
   }
-  
   })
   .catch(error => console.log('Something Went Wrong!', error));
 }
