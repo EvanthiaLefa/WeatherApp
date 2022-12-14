@@ -13,28 +13,36 @@
 
 <body>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <h2 class="card-title text-white">Weather App</h2>
-                <div class="mb-5 search">
-                    <label for="location" class="text-center">Enter location</label>
-                    <input type="text" id="location" value="">
-                    <button type="submit" class="btn btn-light mt-2">Search</button>
-                </div>
-                <img src="..." class="card-img-top" alt="..." style="display: none;">
+<div id="mainDiv" class="row">
 
-                <div class="card-body">
-                    <h3 id="loc" class="card-title"></h3>
-                    <ul class="list-group list-group-flush">
-                        <li id="temp" class="list-group-item bg-transparent"></li>
-                        <li id="feels" class="list-group-item bg-transparent"></li>
-                        <li id="humid" class="list-group-item bg-transparent"></li>
-                        <li id="wind" class="list-group-item bg-transparent"></li>
-                    </ul>
-                </div>
-    
-            </div>
+    <div id="secDiv" class="col-lg-6 col-md-12 col-sm-12">
+        <div class="mt-5">
+            <input type="text" id="location" class="bg-transparent" placeholder="Enter location" value="">
+            <button type="submit" class="btn btn-light">Search</button>
         </div>
+            <div id="details" class="text-muted">
+                <h3>Weather Details </h3>
+                <h4 id="feels" class=""></h4>
+                <h4 id="humid" class=""></h4>
+                <h4 id="wind" class="bg-transparent"></h4>
+            </div>
+            <div id="hourly" class="text-muted">
+                <h3>Hourly</h3>
+            </div>
+    </div>
+
+    <div id="firstDiv" class="col-lg-6 col-md-12 col-sm-12">
+        <h2 class="text-white mt-5 text-center">weather.app</h2>
+        <h3 id="loc" class=""></h3>
+        <img id="weathImg" src="..." class="" alt="..." style="display: none;">
+
+            
+                <h4 id="temp" class=""></h4>
+           
+            </ul>
+    </div>
+
+</div>
     </div>
 
 
