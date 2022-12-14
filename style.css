@@ -12,6 +12,7 @@ input{
     width: 60%;
     border-radius: 15px;
     margin-left: 10%;
+    color: aliceblue;
 }
 
 #feels, #humid, #wind{
