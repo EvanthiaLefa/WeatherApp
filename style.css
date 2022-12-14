@@ -1,43 +1,73 @@
 body{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("icon/photo-1503625958874-841b0d503dd0.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../icon/photo-1503625958874-841b0d503dd0.jpeg");
     background-size: cover;
-    max-width: 60vw;
 }
 h2{
     margin-left: 15%;
-}
-label{
-    color: aliceblue;
-    font-size: larger;
-    margin-left: 15%;
-}
-.card{
-    margin-top: 10%;
-    border: none;
-    margin-left: 63%;
+    text-decoration: underline;
 }
 input{
     height: 2.5em;
+    width: 60%;
     border-radius: 15px;
-}
-button{
-    margin-left: 24%;
-}
-.search{
-    margin-top: 10%;
     margin-left: 10%;
 }
-ul {
-    font-size: larger;
-    
-}
+
 #temp, #feels, #humid, #wind{
     color: aliceblue;
-    margin-left: 10%;
     font-size: larger;
 }
 #loc{
-    color:rgb(197, 206, 214);
-   margin-left: 17%;
+    margin-top: 20%;
+    color:#e3eaf0;
+   margin-left: 40%;
+   text-shadow: 5px 5px 8px #7b858f;
 }
+
+#mainDiv{
+    height: 100vh;
+}
+#firstDiv{
+    height: 100%;  
+}
+#secDiv{
+  height: 100%;  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+button{
+    margin-left: 4%;
+}
+
+#details{
+    margin-top: 30%;
+}
+#hourly{
+    margin-top: 10%;
+}
+h4{
+    padding-top: 7%;
+    text-align:center;
+}
+#weathImg{
+    width: 90%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+@media(max-width:500px){
+    #weathImg{
+        width: 90%;
+        height: 50%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+}
+
