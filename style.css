@@ -1,6 +1,6 @@
 body{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("icon/photo-1503625958874-841b0d503dd0.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../icon/photo-1503625958874-841b0d503dd0.jpeg");
     background-size: cover;
 }
 h2{
@@ -63,17 +63,23 @@ h4{
 #weathImg{
     width: 90%;
     height: 50%;
-    margin-left: 25%;
+    margin-left: 30%;
     margin-top: 5%;
 }
 
-@media(max-width:500px){
+
+@media(max-width:600px){
     #weathImg{
         width: 90%;
         height: 50%;
         margin-left: 5%;
         margin-top: 5%;
     }
+    h2{
+margin-right: 20%;
+    }
+    #loc{
+        margin-left: 35%;
+    }
     
 }
-
