@@ -23,20 +23,22 @@ function getData(){
    windsData = data.currentConditions.windspeed;
    conditions = data.currentConditions.conditions;
    address = data.address;
+   console.log(conditions)
 
-   let hours = data.days[0].hours
-    for (let i = 0; i < hours.length; i++) {
-      let newHour= [];
-       let hour = `${hours[i].datetime}-${hours[i].temp}°C` 
-       p.innerText += "  " + hour
-    }
+ 
 
    temp.innerText = `${tempData}°C`
    feels.innerText = `Feelslike:${feelsData}`
    humid.innerText = `Humidity: ${humidityData}%`
    wind.innerText = `Windspeed: ${windsData}km/h`
    loc.innerText = address.toUpperCase()
-
+   p.innerText= ""
+   let hours = data.days[0].hours
+   for (let i = 0; i < hours.length; i++) {
+      let newHour= [];
+      let hour = `${hours[i].datetime}-${hours[i].temp}°C` 
+      p.innerText += "  " + hour
+   }
    if(conditions == 'Overcast'){
    img.src= './icon/cloudy.jpeg'
    img.style.display = 'block';
@@ -49,10 +51,14 @@ function getData(){
   }else if(conditions =='Snow, Overcast'){
     img.src= './icon/snow.jpeg'
     img.style.display = 'block';
+  }else if(conditions =='Rain, Overcast'){
+    img.src= './icon/rain.jpeg'
+    img.style.display = 'block';
   }
   })
   .catch(error => console.log('Something Went Wrong!', error));
 }
+
 
 
 btn.addEventListener("click", getData)
