@@ -5,45 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>WeatherApp</title>
 </head>
 
 <body>
     <div class="container">
-<div id="mainDiv" class="row">
-
-    <div id="secDiv" class="col-lg-6 col-md-12 col-sm-12">
-        <div class="mt-5">
-            <input type="text" id="location" class="bg-transparent" placeholder="Enter location" value="">
-            <button type="submit" class="btn btn-light">Search</button>
-        </div>
-            <div id="details" class="text-muted">
-                <h3>Weather Details </h3>
-                <h4 id="feels" class=""></h4>
-                <h4 id="humid" class=""></h4>
-                <h4 id="wind" class="bg-transparent"></h4>
-            </div>
-             <div id="hourly" class="text-muted">
-                    <h3>Hourly</h3>
-                    <p></p>
+        <div id="mainDiv" class="row">
+            <div id="secDiv" class="col-lg-6 col-md-12 col-sm-12">
+                <div class="mt-5">
+                    <input type="text" id="location" class="bg-transparent" placeholder="Enter location" value="">
+                    <button type="submit" class="btn btn-light">Search</button>
                 </div>
-    </div>
-
-    <div id="firstDiv" class="col-lg-6 col-md-12 col-sm-12">
-        <h2 class="text-white mt-5 text-center">weather.app</h2>
-        <h3 id="loc" class=""></h3>
-        <img id="weathImg" src="..." class="" alt="..." style="display: none;">
-
-            
-                <h4 id="temp" class=""></h4>
-           
-            </ul>
-    </div>
-
-</div>
+                <h3 id="loc" class=""></h3>
+                <img id="weathImg" src="" class="" alt="..." style="display: none;">
+                <h1 id="temp" class=""></h1>
+                <div id="details" class="">
+                    <h3>Weather Details </h3>
+                    <h4 id="feels" class=""></h4>
+                    <h4 id="humid" class=""></h4>
+                    <h4 id="wind" class=""></h4>
+                    <h4 id="condition" class=""></h4>
+                </div>
+            </div>
+            <div id="firstDiv" class="col-lg-6 col-md-12 col-sm-12">
+                <h2 id="h2-text"class="text-white mt-5 text-center">weather.app</h2>
+                <div id="daily" class="text-muted">
+                    <h2 id="h2Daily">Daily</h2>
+                    <ul id="ulDaily"></ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 
